@@ -2,3 +2,11 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/lifer}
+    username: ${DATABASE_USERNAME:lifer}
+    password: ${DATABASE_PASSWORD:lifer}
+  flyway:
+    sql-migration-prefix: "DATE_"
+
