@@ -10,3 +10,9 @@ spring:
   flyway:
     sql-migration-prefix: "DATE_"
 
+setting:
+  telegram:
+    bot:
+      token: ${TELEGRAM_BOT_TOKEN}
+      username: ${TELEGRAM_BOT_USERNAME}
+
